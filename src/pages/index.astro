@@ -1,21 +1,52 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ContextAlert from '../components/ContextAlert.astro';
-import Markdown from '../components/Markdown.astro';
-
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
-
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
+// We no longer need to import a logo component, so that line is removed.
 ---
 
-<Layout title="Welcome to Astro.">
-    <ContextAlert class="mb-8" />
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
+<Layout title="Singular: Own Less. Control More.">
+	<div class="text-center">
+		<div class="mb-12 flex flex-col items-center">
+			<img src="/logo.png" alt="Singular Protocol Logo" class="w-24 h-24 mb-6" />
+			
+			<h1 class="text-5xl font-bold mb-4">Own Less. Control More.</h1>
+			<p class="text-xl text-gray-300 max-w-2xl mx-auto">
+				Singular is a decentralized investment protocol governed by its community, with a token whose value is backed by a portfolio of real assets.
+			</p>
+		</div>
+
+		<div class="mb-16">
+			<h2 class="text-3xl font-bold mb-4">A New Economic Primitive</h2>
+			<p class="text-lg max-w-3xl mx-auto">
+				Traditional tokenomics leads to high supply and value dilution. Singular pioneers a new model anchored in absolute scarcity and intrinsic value, where the success of the protocol directly translates to the value of the token.
+			</p>
+		</div>
+		
+		<div class="mb-16">
+			<h2 class="text-3xl font-bold mb-8">A Self-Sustaining Economic Engine</h2>
+			<div class="grid md:grid-cols-3 gap-8">
+				<div class="p-6 border border-gray-700 rounded-lg">
+					<h3 class="text-xl font-semibold mb-2">Capital Allocation</h3>
+					<p>The DAO deploys capital from its treasury into promising new ventures via a formal, community-led proposal and voting process.</p>
+				</div>
+				<div class="p-6 border border-gray-700 rounded-lg">
+					<h3 class="text-xl font-semibold mb-2">Intrinsic Value Growth</h3>
+					<p>The value of the SNG token is intrinsically linked to the Net Asset Value (NAV) of the treasury's investment portfolio.</p>
+				</div>
+				<div class="p-6 border border-gray-700 rounded-lg">
+					<h3 class="text-xl font-semibold mb-2">Profit-Sharing Dividends</h3>
+					<p>Profits from successful investments are returned to token holders as dividends, rewarding long-term commitment and effective governance.</p>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<h2 class="text-3xl font-bold mb-4">Explore the Full Vision</h2>
+			<p class="text-lg mb-6">
+				Our whitepaper provides a complete overview of the Singular protocol, including our detailed tokenomics, governance model, security commitments, and roadmap.
+			</p>
+			<p>
+				<a href="[YOUR_WHITEPAPER_PDF_LINK]" class="btn btn-lg sm:min-w-64">Read the Whitepaper</a>
+			</p>
+		</div>
+	</div>
 </Layout>
