@@ -16,17 +16,26 @@ import Section from '../components/Section.astro';
     <div class="mb-20">
         <h2 class="text-3xl font-bold text-center mb-8">The Value Cycle</h2>
         <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-center font-mono text-sm">
-            <div class="flow-box border-blue-500">
+            <!-- Box 1: Classes are now applied directly -->
+            <div class="p-4 border rounded-lg w-full md:w-56 border-blue-500">
                 <span class="text-blue-400 font-bold">1. Capital Allocation</span>
                 <p class="text-xs mt-1 text-gray-400">DAO invests treasury funds</p>
             </div>
-            <div class="arrow">&rarr;</div>
-            <div class="flow-box border-green-500">
+
+            <!-- Arrow -->
+            <div class="text-2xl text-gray-500 transform rotate-90 md:rotate-0">&rarr;</div>
+            
+            <!-- Box 2: Classes are now applied directly -->
+            <div class="p-4 border rounded-lg w-full md:w-56 border-green-500">
                 <span class="text-green-400 font-bold">2. Intrinsic Growth</span>
                 <p class="text-xs mt-1 text-gray-400">Treasury NAV increases</p>
             </div>
-            <div class="arrow">&rarr;</div>
-            <div class="flow-box border-yellow-500">
+
+             <!-- Arrow -->
+            <div class="text-2xl text-gray-500 transform rotate-90 md:rotate-0">&rarr;</div>
+            
+            <!-- Box 3: Classes are now applied directly -->
+            <div class="p-4 border rounded-lg w-full md:w-56 border-yellow-500">
                 <span class="text-yellow-400 font-bold">3. Profit Sharing</span>
                 <p class="text-xs mt-1 text-gray-400">Dividends returned to holders</p>
             </div>
@@ -83,11 +92,4 @@ import Section from '../components/Section.astro';
   </div>
 </Layout>
 
-<style>
-    .flow-box {
-        @apply p-4 border rounded-lg w-full md:w-56;
-    }
-    .arrow {
-        @apply text-2xl text-gray-500 transform rotate-90 md:rotate-0;
-    }
-</style>
+<!-- The <style> block has been removed as it is no longer needed -->
