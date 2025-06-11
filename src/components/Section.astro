@@ -1,0 +1,24 @@
+---
+// src/components/Section.astro
+// This component creates a standard section with a title and subtitle.
+// It uses <slot /> to render any child content passed into it.
+
+interface Props {
+  title: string;
+  subtitle: string;
+}
+
+const { title, subtitle } = Astro.props;
+---
+
+<section class="space-y-6">
+  <div>
+    <h2 class="text-3xl font-bold">{title}</h2>
+    <p class="text-lg text-gray-400 mt-1">{subtitle}</p>
+  </div>
+  
+  <!-- This is where the content for each section will be rendered -->
+  <div class="space-y-4">
+    <slot />
+  </div>
+</section>

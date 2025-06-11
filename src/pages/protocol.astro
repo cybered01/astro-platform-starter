@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Section from '../components/Section.astro';
+import Section from '../components/Section.astro'; // Now we import the component we created
 ---
 
 <Layout title="The Protocol | Singular">
@@ -16,32 +16,22 @@ import Section from '../components/Section.astro';
     <div class="mb-20">
         <h2 class="text-3xl font-bold text-center mb-8">The Value Cycle</h2>
         <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-center font-mono text-sm">
-            <!-- Box 1: Classes are now applied directly -->
             <div class="p-4 border rounded-lg w-full md:w-56 border-blue-500">
                 <span class="text-blue-400 font-bold">1. Capital Allocation</span>
                 <p class="text-xs mt-1 text-gray-400">DAO invests treasury funds</p>
             </div>
-
-            <!-- Arrow -->
             <div class="text-2xl text-gray-500 transform rotate-90 md:rotate-0">&rarr;</div>
-            
-            <!-- Box 2: Classes are now applied directly -->
             <div class="p-4 border rounded-lg w-full md:w-56 border-green-500">
                 <span class="text-green-400 font-bold">2. Intrinsic Growth</span>
                 <p class="text-xs mt-1 text-gray-400">Treasury NAV increases</p>
             </div>
-
-             <!-- Arrow -->
             <div class="text-2xl text-gray-500 transform rotate-90 md:rotate-0">&rarr;</div>
-            
-            <!-- Box 3: Classes are now applied directly -->
             <div class="p-4 border rounded-lg w-full md:w-56 border-yellow-500">
                 <span class="text-yellow-400 font-bold">3. Profit Sharing</span>
                 <p class="text-xs mt-1 text-gray-400">Dividends returned to holders</p>
             </div>
         </div>
     </div>
-
 
     <div class="space-y-16">
 
@@ -66,7 +56,6 @@ import Section from '../components/Section.astro';
 
       <!-- 2. Intrinsic Value Growth -->
       <Section title="Intrinsic Value Growth" subtitle="Backed by a Portfolio of Real Assets">
-        <p class="mb-4">Unlike purely speculative tokens, the value of SNG is directly tied to the performance of its underlying assets. This provides a transparent and quantifiable foundation for its worth.</p>
         <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-700 space-y-4">
             <h3 class="text-xl font-bold">What is Net Asset Value (NAV)?</h3>
             <p>In the context of Singular, NAV is the total market value of all assets held within the DAO Treasury. These assets primarily consist of the native tokens from the projects the DAO has invested in, along with stablecoins and the protocol's own SNG reserves.</p>
@@ -78,7 +67,6 @@ import Section from '../components/Section.astro';
 
       <!-- 3. Profit-Sharing Dividends -->
       <Section title="Profit-Sharing Dividends" subtitle="Rewarding Long-Term Governance">
-         <p class="mb-4">The final stage of the economic engine is returning value directly to the community members who make the protocol successful. This is achieved through a robust profit-sharing mechanism.</p>
          <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-700 space-y-4">
             <h3 class="text-xl font-bold">How are Dividends Funded?</h3>
             <p>Dividends are funded exclusively from **realized profits**. When the DAO votes to sell a portion of a successful investment, the resulting profit (in stablecoins) becomes available. The community can then pass a Singular Profit Distribution (SPD) proposal to share a portion of these profits.</p>
@@ -91,5 +79,3 @@ import Section from '../components/Section.astro';
     </div>
   </div>
 </Layout>
-
-<!-- The <style> block has been removed as it is no longer needed -->
