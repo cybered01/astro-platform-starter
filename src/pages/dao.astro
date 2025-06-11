@@ -1,0 +1,101 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="The Singular DAO | Governance">
+  <div class="max-w-4xl mx-auto px-4 py-8 md:py-16">
+    <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">The Singular DAO</h1>
+        <p class="text-lg text-gray-300">Community-Led Governance & Control</p>
+    </div>
+
+    <div class="space-y-12">
+      <!-- Intro Section -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4 text-center">Your Voice, Your Vote</h2>
+        <p class="text-gray-300 mt-4 leading-relaxed text-center max-w-2xl mx-auto">
+          The Singular DAO empowers SNG holders to be the ultimate arbiters of the protocol. All critical decisions, from approving investments (SIPs) to distributing profits (SPDs) and managing the treasury, are made by the community through a transparent and fair voting process.
+        </p>
+      </div>
+
+      <!-- Governance Mechanics Section -->
+      <div class="bg-gray-900/50 p-6 md:p-8 rounded-lg border border-gray-700">
+        <h2 class="text-3xl font-bold mb-6 text-center">Governance Mechanics</h2>
+        <div class="space-y-8">
+            <!-- Voting Score -->
+            <div>
+                <h3 class="text-xl font-semibold text-blue-400 mb-2">Voting Score Formula</h3>
+                <p class="text-gray-400 mb-4">
+                    To ensure a fair and incentivized process, voting power is not just about how many tokens you hold, but how long you are committed to the project. This is calculated with our unique Voting Score formula.
+                </p>
+                <div class="bg-gray-800 p-4 rounded-lg font-mono text-center text-sm md:text-base">
+                    Voting Score = Q × (1 + (T / T_max) × B)
+                </div>
+            </div>
+            <!-- Early Unlock Penalty -->
+            <div>
+                <h3 class="text-xl font-semibold text-red-400 mb-2">Early Unlock Penalty</h3>
+                <p class="text-gray-400 mb-4">
+                    To protect protocol stability and discourage short-term speculation, a proportional penalty is applied for unlocking tokens before the committed lock period ends. These fees are sent directly to the DAO treasury, benefiting all long-term holders.
+                </p>
+                 <div class="bg-gray-800 p-4 rounded-lg font-mono text-center text-sm md:text-base">
+                    Penalty = Locked Amount × (Time Remaining / Total Time) × Penalty Factor
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Initial Parameters Section -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-6 text-center">Initial Governance Parameters</h2>
+        <div class="overflow-x-auto">
+          <table class="min-w-full bg-gray-900/50 border border-gray-700">
+            <thead class="bg-gray-800">
+              <tr>
+                <th class="text-left py-3 px-4 font-semibold">Parameter</th>
+                <th class="text-left py-3 px-4 font-semibold">Initial Value</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-700">
+              <tr>
+                <td class="py-3 px-4">Proposal Submission Threshold</td>
+                <td class="py-3 px-4 font-mono">0.1% of Total Supply</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4">Voting Period</td>
+                <td class="py-3 px-4 font-mono">72 Hours</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4">Quorum</td>
+                <td class="py-3 px-4 font-mono">4% of active Voting Score</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4">Passing Threshold</td>
+                <td class="py-3 px-4 font-mono">51% 'For' vote</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+       <!-- Call to Action -->
+       <div class="text-center pt-8">
+            <h2 class="text-2xl font-semibold mb-4">Participate in Governance</h2>
+            <p class="text-lg text-gray-400 mb-6">
+                The governance portal will be the home for all proposals and voting.
+            </p>
+            <p>
+                <a href="#" class="btn btn-lg sm:min-w-64 btn-disabled" aria-disabled="true">Governance Portal (Coming Soon)</a>
+            </p>
+      </div>
+
+    </div>
+  </div>
+</Layout>
+
+<style>
+.btn-disabled {
+    cursor: not-allowed;
+    background-color: #4a5568; /* gray-600 */
+    opacity: 0.5;
+}
+</style>
