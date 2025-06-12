@@ -2,11 +2,63 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="About Singular">
-  <div class="max-w-4xl mx-auto px-4 py-8">
-    <h1 class="text-4xl font-bold mb-6">About Singular</h1>
-    <p class="text-lg">
-      This is the about page for the Singular Protocol. Here we can explain the project's mission, the team's vision, and the core problems we aim to solve.
-    </p>
+<Layout title="About | Singular">
+  <div class="max-w-4xl mx-auto px-4 py-8 md:py-16">
+    <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">About Singular</h1>
+        <p class="text-lg text-gray-300">Fixing a broken system by building a new economic primitive.</p>
+    </div>
+
+    <div class="space-y-12">
+      <div>
+        <h2 class="text-3xl font-bold text-center mb-6">Our Mission</h2>
+        <p class="text-lg text-gray-300 leading-relaxed">
+          The promise of cryptocurrency has always been to create a more equitable and transparent financial system. However, the current landscape is dominated by projects with vast, inflationary token supplies that dilute value and reward short-term speculation over long-term commitment.
+        </p>
+        <p class="text-lg text-gray-300 leading-relaxed mt-4">
+          Singular's mission is to challenge this status quo. We are building a decentralized investment protocol anchored in the immutable principle of **absolute scarcity**. Our goal is to create a powerful, community-governed economic engine where value is not manufactured, but collectively built and fairly distributed.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-3xl font-bold text-center mb-6">The Vision: A Community-Owned Fund</h2>
+        <p class="text-lg text-gray-300 leading-relaxed">
+          We envision a future where the line between user, owner, and investor is blurred. Singular is not a company that builds products; it is a protocol that empowers its community to act as a decentralized venture capital fund.
+        </p>
+        <p class="text-lg text-gray-300 leading-relaxed mt-4">
+          By holding SNG, you hold a stake in a treasury that invests in the next generation of web3 innovation. The collective intelligence of the DAO identifies and funds promising projects, and the success of those investments is directly reflected in the intrinsic value of your SNG. This creates a powerful flywheel: smart governance leads to smart investments, which leads to a more valuable protocol for everyone.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-3xl font-bold text-center mb-8">Our Core Principles</h2>
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Radical Transparency</h3>
+            <p class="text-gray-400">Every investment, every transaction, and the full Net Asset Value (NAV) of our treasury is publicly verifiable on-chain, 24/7.</p>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Incentivized Governance</h3>
+            <p class="text-gray-400">Our `Voting Score` system ensures that the members with the most long-term conviction have the strongest voice in shaping our future.</p>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Sustainable Value</h3>
+            <p class="text-gray-400">We reject inflationary tokenomics. The value of Singular is directly backed by a growing portfolio of real, diversified assets.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center pt-8">
+            <h2 class="text-2xl font-semibold mb-4">Become a Part of the Vision</h2>
+            <p class="text-lg text-gray-400 mb-6">
+                Read our whitepaper to understand the detailed mechanics and join our community to start building with us.
+            </p>
+            <div class="flex justify-center gap-4">
+                 <a href="/singular-whitepaper.pdf" class="btn">Read the Whitepaper</a>
+                 <a href="/community" class="btn btn-secondary">Join the Community</a>
+            </div>
+      </div>
+
+    </div>
   </div>
 </Layout>
