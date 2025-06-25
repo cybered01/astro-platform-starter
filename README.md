@@ -1,51 +1,28 @@
-# Astro on Netlify Platform Starter
+Singular Protocol ($SNG)
+Own Less. Control More.
 
-[Live Demo](https://astro-platform-starter.netlify.app/)
+Singular is a decentralized, community-governed investment protocol built on the immutable principle of absolute scarcity.
 
-A modern starter based on Astro.js, Tailwind, and [Netlify Core Primitives](https://docs.netlify.com/core/overview/#develop) (Edge Functions, Image CDN, Blob Store).
+This repository contains the source code for the official Singular Protocol website, built with Astro.
 
-## Astro Commands
+The Vision
+The Singular Protocol introduces a new economic primitive designed to combat the value dilution and misaligned incentives common in the DeFi space. Our core mission is to create a self-sustaining economic engine where the value of our native token, SNG, is directly and transparently backed by a growing portfolio of real, on-chain assets managed by the community.
 
-All commands are run from the root of the project, from a terminal:
+Key Links
+Official Website: https://singularcrypto.com/
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Institutional Whitepaper: https://singularcrypto.com/singular-whitepaper.pdf
 
-## Deploying to Netlify
+Community Discord: https://discord.com/invite/qpuSs3xPDU
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/astro-platform-starter)
+Core Features
+Absolute Scarcity: The protocol is built around a single SNG token, fractionalized into 100 million units. The supply is fixed and cannot be inflated.
 
-## Developing Locally
+Asset-Backed Value: The SNG token represents a direct claim on the treasury's Net Asset Value (NAV). Its value is tied to the performance of the assets we invest in, not just market speculation.
 
-| Prerequisites                                                                |
-| :--------------------------------------------------------------------------- |
-| [Node.js](https://nodejs.org/) v18.14+.                                      |
-| (optional) [nvm](https://github.com/nvm-sh/nvm) for Node version management. |
+Aligned Governance: Our Voting Score system heavily rewards long-term commitment, ensuring that the most dedicated community members have the strongest voice in guiding our investment strategy.
 
-1. Clone this repository, then run `npm install` in its root directory.
+Profit-Sharing Dividends: A complete value cycle where realized profits from successful investments can be distributed directly back to committed SNG holders.
 
-2. For the starter to have full functionality locally (e.g. edge functions, blob store), please ensure you have an up-to-date version of Netlify CLI. Run:
-
-```
-npm install netlify-cli@latest -g
-```
-
-3. Link your local repository to the deployed Netlify site. This will ensure you're using the same runtime version for both local development and your deployed site.
-
-```
-netlify link
-```
-
-4. Then, run the Astro.js development server via Netlify CLI:
-
-```
-netlify dev
-```
-
-If your browser doesn't navigate to the site automatically, visit [localhost:8888](http://localhost:8888).
+Disclaimer
+The Singular Protocol is experimental software. The information in this repository is for informational purposes only and does not constitute financial, investment, or legal advice. All participation in the protocol is at your own risk.
