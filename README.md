@@ -24,5 +24,23 @@ Aligned Governance: Our Voting Score system heavily rewards long-term commitment
 
 Profit-Sharing Dividends: A complete value cycle where realized profits from successful investments can be distributed directly back to committed SNG holders.
 
+Getting Started (For Development)
+This project is built with Astro and is deployed on Netlify.
+
+Install Dependencies:
+
+npm install
+
+Run Development Server:
+To run the local development server with full Netlify functionality, use the Netlify CLI:
+
+netlify dev
+
+The site will be available at http://localhost:8888.
+
+Build for Production:
+
+npm run build
+
 Disclaimer
 The Singular Protocol is experimental software. The information in this repository is for informational purposes only and does not constitute financial, investment, or legal advice. All participation in the protocol is at your own risk.
