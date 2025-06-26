@@ -21,6 +21,16 @@ const { title } = Astro.props;
         <meta name="generator" content={Astro.generator} />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="preload" as="font" type="font/woff2" href={interWoff2} crossorigin />
+		    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C1XNTQ8C9J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-C1XNTQ8C9J');
+    </script>
+
     </head>
     <body class="antialiased text-white bg-complementary">
         <div class="flex flex-col min-h-screen px-6 bg-noise sm:px-12">
